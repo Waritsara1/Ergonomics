@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        p.a {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style=background-color:#a9c7af>
+        <div class="container-fluid">
+            <a class="nav-link active" href="Home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="VariablesFull.html">Variables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Calulation.html">Calculation</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ErgonomicsFull.html">Ergonomics</a></li>
+                            <li><a class="dropdown-item" href="NIOSH lifting Equation.html">NIOSH Lifting equation</a>
+                            </li>
+                            <li><a class="dropdown-item" href="Risk factorsFull.html">Risk factors</a></li>
+                            <li><a class="dropdown-item" href="WMSDs.html">WMSDs</a></li>
+                            <li><a class="dropdown-item" href="Suggestion.html">Suggestion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Aboutfull.html">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.discordapp.com/attachments/941242172995407872/1069679748009177169/variables_2.png"
+                    class="d-block w-100" alt="google">
+            </div>
+        </div>
+    </div>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">
+                    <p class="a">Variables</p>
+                </th>
+                <th scope="col">
+                    <p class="a">Meaning</p>
+                </th>
+                <th scope="col">
+                    <p class="a">Input</p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    <p class="a">1</p>
+                </th>
+                <td>
+                    <p class="a">LC</p>
+                </td>
+                <td>
+                    <p class="a">Load Constant</p>
+                </td>
+                <td>
+                    <input type="number" class="form-control" id="Load Constant" aria-describedby="numHelp">
+                    <div id="numHelp" class="form-text text-danger">
+                        <p class="a">Load Constant is 23 kg only</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p class="a">2</p>
+                </th>
+                <td>
+                    <p class="a">HM</p>
+                </td>
+                <td>
+                    <p class="a">Horizontal location</p>
+                </td>
+                <td>
+                    <input type="number" class="form-control" id="Horizontal location" aria-describedby="numHelp">
+                    <div id="numHelp" class="form-text">ตัวเลขที่ต้องการกรอก</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p class="a">3</p>
+                </th>
+                <td>
+                    <p class="a">VM</p>
+                </td>
+                <td>
+                    <p class="a">Vertical Multiplier</p>
+                </td>
+                <td>
+                    <input type="number" class="form-control" id="Vertical Multiplier" aria-describedby="numHelp">
+                    <div id="numHelp" class="form-text">ตัวเลขที่ต้องการกรอก</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p class="a">4</p>
+                </th>
+                <td>
+                    <p class="a">DM</p>
+                </td>
+                <td>
+                    <p class="a">Distance Multiplier</p>
+                </td>
+                <td>
+                    <input type="number" class="form-control" id="Distance Multiplier" aria-describedby="numHelp">
+                    <div id="numHelp" class="form-text">ตัวเลขที่ต้องการกรอก</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p class="a">5</p>
+                </th>
+                <td>
+                    <p class="a">AM</p>
+                </td>
+                <td>
+                    <p class="a">Asymmetry Multiplier</p>
+                </td>
+                <td>
+                    <input type="number" class="form-control" id="Asymmetry Multiplier" aria-describedby="numHelp">
+                    <div id="numHelp" class="form-text">ตัวเลขที่ต้องการกรอก</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p class="a">6</p>
+                </th>
+                <td>
+                    <p class="a">FM</p>
+                </td>
+                <td>
+                    <p class="a">Frequncy Multiplier</p>
+                </td>
+                <td>
+                    <input type="number" class="form-control" id="Frequncy Multiplier" aria-describedby="numHelp">
+                    <div id="numHelp" class="form-text">ตัวเลขที่ต้องการกรอก</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p class="a">7
+                </th>
+                <td>
+                    <p class="a">CM</p>
+                </td>
+                <td>
+                    <p class="a">Coupling Multiplier</p>
+                </td>
+                <td>
+                    <input type="number" class="form-control" id="Coupling Multiplier" aria-describedby="numHelp">
+                    <div id="numHelp" class="form-text">ตัวเลขที่ต้องการกรอก</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p class="a">8</p>
+                </th>
+                <td>
+                    <p class="a">Weight</p>
+                </td>
+                <td>
+                    <p class="a">Weight while you lifting</p>
+                </td>
+                <td>
+                    <input type="number" class="form-control" id="weight" aria-describedby="numHelp">
+                    <div id="numHelp" class="form-text ">ตัวเลขที่ต้องการกรอก</div>
+                </td>
+            </tr>
+    </table>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <!-- Button trigger modal -->
+
+        <button type="button" class="btn btn-outline-success" onclick="pow2()" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            SUMMIT
+        </button>
+        <br>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Result</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-bg-success p-3">
+                                    <h1 p class="text-uppercase">
+                                        <p class="a"></p>RWL
+                                </div>
+                                <h1 id="result">
+                                    <p class="a"></p>Result
+                                </h1>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-bg-warning p-3">
+                                    <h1 p class="text-uppercase">
+                                        <p class="a"></p>LI
+                                </div>
+                                <h1 id="LI">
+                                    <p class="a"></p>LI
+                                </h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    <script>
+        console.log("RWL-LI")
+        function pow2() {
+            var LC = document.getElementById('Load Constant').value
+            var HM = document.getElementById('Horizontal location').value
+            var VM = document.getElementById('Vertical Multiplier').value
+            var DM = document.getElementById('Distance Multiplier').value
+            var AM = document.getElementById('Asymmetry Multiplier').value
+            var FM = document.getElementById('Frequncy Multiplier').value
+            var CM = document.getElementById('Coupling Multiplier').value
+            var weight = document.getElementById('weight').value
+            var result = LC * HM * VM * DM * AM * FM * CM;
+            var LI = weight / result;
+            var LI = LI.toFixed(2);
+            console.log(result)
+            var div_result = document.getElementById('result');
+            div_result.innerHTML = result;
+            console.log(LI)
+            var div_result = document.getElementById('LI');
+            div_result.innerHTML = LI;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

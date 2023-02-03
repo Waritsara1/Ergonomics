@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        p.a {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style=background-color:#a9c7af>
+        <div class="container-fluid">
+            <a class="nav-link active" href="Home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="VariablesFull.html">Variables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Calulation.html">Calculation</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ErgonomicsFull.html">Ergonomics</a></li>
+                            <li><a class="dropdown-item" href="NIOSH lifting Equation.html">NIOSH Lifting equation</a>
+                            </li>
+                            <li><a class="dropdown-item" href="Risk factorsFull.html">Risk factors</a></li>
+                            <li><a class="dropdown-item" href="WMSDs.html">WMSDs</a></li>
+                            <li><a class="dropdown-item" href="Suggestion.html">Suggestion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Aboutfull.html">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://media.discordapp.net/attachments/941242172995407872/1065177976959926302/57731865-8131-4501-A3E2-E3CE743AEEEB.png?width=1440&height=360"
+                    class="d-block w-100" alt="google">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="text-center col-2">
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">
+                    <p class="a">LC</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">
+                    <p class="a">HM</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">
+                    <p class="a">VM</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">
+                    <p class="a">DM</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#list-item-5">
+                    <p class="a">AM</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#list-item-6">
+                    <p class="a">FM</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#list-item-7">
+                    <p class="a">CM</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">
+                    <p class="a"><strong>Load Constant</strong></p>
+                </h4>
+                <p class="a">
+                    Determine the weight of the object lifted. If necessary, use a scale to determine the exact weight.
+                    <Br>
+                    If the weight of the load varies from lift to lift, you should record the maximum is 23 kg
+                    weights lifted.
+                </p>
+                <h4 id="list-item-2">
+                    <p class="a"><strong>Horizontal location of the Hands</strong></p>
+                </h4>
+
+                <div class="container">
+                    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://cdn.discordapp.com/attachments/941242172995407872/1062655773051731989/Screenshot_353.png"
+                                class="img-thumbnail" alt="google">
+                        </div>
+                        <div class="col-6 col-md-8">
+                            <img src="https://cdn.discordapp.com/attachments/941242172995407872/1063663911120945232/S__4882451.jpg"
+                                class="img-thumbnail" alt="google">
+                        </div>
+                    </div>
+                    <br>
+                    <p class="a"> Measure and record the horizontal location of the hands at both the start and end of
+                        the lifting
+                        task.
+                        <br>
+                        The horizontal location is measured as the distance (centimetrs.) between the employee’s ankles
+                        <br>
+                        to a point projected on the floor directly below the mid-point of the hands grasping the object
+                    </p>
+                </div>
+
+                <h4 id="list-item-3">
+                    <p class="a"><strong>Vertical location of the Hands</strong></p>
+                </h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://cdn.discordapp.com/attachments/941242172995407872/1062655852143726622/Screenshot_354.png"
+                                class="img-thumbnail" alt="google">
+                        </div>
+                        <div class="col-6 col-md-8">
+                            <img src="https://cdn.discordapp.com/attachments/941242172995407872/1061208742336675871/FD8A3DC8-349B-489F-95A8-A9AB02835087.jpg"
+                                class="img-thumbnail" alt="google">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="a">
+                    Measure and record the vertical location of the hands above the floor at the start and end of
+                    the
+                    lifting task.
+                    <br>
+                    The vertical location is measured from the floor to the vertical mid-point between the two hands
+                    as
+                    shown below.
+                    <br>
+                    The middle knuckle can be used to define the mid-point.
+                </p>
+                <h4 id="list-item-4">
+                    <p class="a"><strong>Vertical Travel Distance</strong></p>
+                </h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://cdn.discordapp.com/attachments/941242172995407872/1062643298809958430/Screenshot_350.png"
+                                class="img-thumbnail" alt="google">
+                        </div>
+                        <div class="col-6 col-md-8">
+
+                            <img src="https://cdn.discordapp.com/attachments/941242172995407872/1061208629203718164/5BBB0BDC-BA82-4744-BDC2-E4C466D98A6E.jpg"
+                                class="img-thumbnail" alt="google">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="a">
+                    The vertical travel distance of a lift is determined by subtracting the vertical location (V)
+                    <br>
+                    at the start of the lift from the vertical location (V) at the end of the lift.
+                    <br>
+                    For a lowering task, subtract the V location at the end from the V location at the start.
+                </p>
+                <h4 id="list-item-5">
+                    <p class="a"><strong>Asymmetry Multiplier</strong></p>
+                </h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://cdn.discordapp.com/attachments/941242172995407872/1062655603098521641/Screenshot_351.png"
+                                class="img-thumbnail" alt="google">
+                        </div>
+                        <div class="col-6 col-md-8">
+                            <img src="https://cdn.discordapp.com/attachments/941242172995407872/1061205120647446558/S__4882446.jpg"
+                                class="img-thumbnail" alt="google">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="a">
+                    Measure the degree to which the body is required to twist or turn during the lifting task.
+                    <Br>
+                    The asymmetric angle is the amount (in degrees) of trunk and shoulder rotation required by the
+                    lifting task.
+
+                </p>
+                <h4 id="list-item-6">
+                    <p class="a"><strong>Frequncy Multiplier</strong></p>
+                </h4>
+
+                <div class="container text-center">
+                    <img src="https://cdn.discordapp.com/attachments/941242172995407872/1062655669393690634/Screenshot_352.png"
+                        class="img-thumbnail" alt="google">
+                </div>
+                <br>
+                <p class="a">
+                    Determine the appropriate lifting frequency of lifting tasks by using the average number of
+                    lifts
+                    per minute during an average 15 minute sampling period.
+                    <br>
+                    For example, count the total number of lifts in a typical 15 minute period of time and divide
+                    that
+                    total number by 15.
+                </p>
+                <h4 id="list-item-7">
+                    <p class="a"><strong>Coupling Multiplier</strong></p>
+                </h4>
+                <p class="a">
+                <div class="container text-center">
+                    <img src="https://media.discordapp.net/attachments/941242172995407872/1062655906766127114/Screenshot_355.png"
+                        class="img-thumbnail" alt="google">
+                </div>
+                <br>
+                <div class="container text-center">
+                    <img src="https://cdn.discordapp.com/attachments/941242172995407872/1061199746766741524/Screenshot_337.png"
+                        class="img-thumbnail" alt="google">
+                </div>
+                <br>
+                </p>
+                <p class="a">
+                    Determine the classification of the quality of the coupling between the worker's hands and the
+                    object as good, fair, or poor (1, 2, or 3).
+                    <br>
+                    A good coupling will reduce the maximum grasp forces required and increase the acceptable weight
+                    for
+                    lifting,
+                    <br>
+                    while a poor coupling will generally require higher maximum grasp forces and decrease the
+                    acceptable
+                    weight for lifting.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
